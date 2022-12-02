@@ -23,4 +23,6 @@ struct MyData
 int main(int argc, char* argv[])
 {
 	struct MyData myArgs; 
+	char fullName[100];
+	FILE* f; 
 }
