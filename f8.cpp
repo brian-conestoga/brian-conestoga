@@ -25,4 +25,11 @@ int main(int argc, char* argv[])
 	struct MyData myArgs; 
 	char fullName[100];
 	FILE* f; 
+	int i; 
+
+	if (argc != 4)
+	{
+		printf("Error: Invalid Arguments passing");
+		return 0;
+	}
 }
