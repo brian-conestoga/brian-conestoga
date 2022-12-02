@@ -19,3 +19,8 @@ struct MyData
 	char directoryPath[80];
 	char filename[80];
 };
+
+int main(int argc, char* argv[])
+{
+	struct MyData myArgs; 
+}
