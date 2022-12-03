@@ -35,5 +35,6 @@ int main(int argc, char* argv[])
 	else
 	{
 		myArgs.howMany = atoi(argv[1]);
+		strcpy(myArgs.theText, argv[2]); 
 	}
 }
