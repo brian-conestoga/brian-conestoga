@@ -49,6 +49,8 @@ int main(int argc, char* argv[])
 				fputs(myArgs.theText, f);
 				fputs("\n", f);
 			}
+			fclose(f);
 		}
 	}
+	return 0;
 }
