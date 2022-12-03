@@ -37,5 +37,6 @@ int main(int argc, char* argv[])
 		myArgs.howMany = atoi(argv[1]);
 		strcpy(myArgs.theText, argv[2]); 
 		strcpy(myArgs.directoryPath, argv[3]); 
+		strcpy(myArgs.filename, argv[4]); 
 	}
 }
