@@ -32,4 +32,8 @@ int main(int argc, char* argv[])
 		printf("Error: Invalid Arguments passing");
 		return 0;
 	}
+	else
+	{
+		myArgs.howMany = atoi(argv[1]);
+	}
 }
