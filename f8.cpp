@@ -42,5 +42,13 @@ int main(int argc, char* argv[])
 		strcat(fullname, myArgs.filename); 
 
 		f = fopen(fullname, "w");
+		if (f!= NULL)
+		{
+			for (i = 0; i < myArgs.howMany; i++)
+			{
+				fputs(myArgs.theText, f);
+				fputs("\n", f);
+			}
+		}
 	}
 }
