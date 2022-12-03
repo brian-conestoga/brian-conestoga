@@ -23,7 +23,7 @@ struct MyData
 int main(int argc, char* argv[])
 {
 	struct MyData myArgs; 
-	char fullName[100];
+	char fullname[100];
 	FILE* f; 
 	int i; 
 
@@ -38,5 +38,9 @@ int main(int argc, char* argv[])
 		strcpy(myArgs.theText, argv[2]); 
 		strcpy(myArgs.directoryPath, argv[3]); 
 		strcpy(myArgs.filename, argv[4]); 
+		strcat(fullname, "\\");
+		strcat(fullname, myArgs.filename); 
+
+		f = fopen(fullname, "w");
 	}
 }
